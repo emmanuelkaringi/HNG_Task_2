@@ -9,12 +9,12 @@
   * [Script Overview](#script-overview)
     + [Shebang](#shebang)
     + [File Paths](#file-paths)
-    + [Ensure Secure Directory Exist](#ensure-secure-directory-exist)
+    + [Ensure Secure Directory Exists](#ensure-secure-directory-exists)
     + [Clear Log and Password Files](#clear-log-and-password-files)
     + [Generate Random Password](#generate-random-password)
     + [Check Input File](#check-input-file)
     + [Read the input file line by line](#read-the-input-file-line-by-line)
-  * [Example Input file](#example-input-file)
+  * [Example Input File](#example-input-File)
   * [Usage](#usage)
   * [Conclusion](#conclusion)
 
@@ -25,7 +25,7 @@
 
  ## Prerequisities
  - Basic knowledge of Linux commands and Bash scripting.
- - Root or sudo priviliges to run the script.
+ - **Root or sudo** privileges to run the script.
  - An input file containing the list of users and groups formatted as `username;group1,group2,...`.
 
 e.g.
@@ -49,14 +49,14 @@ You can read more about shebang [here](https://medium.com/@codingmaths/bin-bash-
 We need to set variables that specifies/stores paths to the files we will be using to achieve the various tasks.
 
 This files are:
-- LOG_FILE: The log file where all actions are recorded.
-- PASSWORD_FILE: The file where generated passwords are stored securely.
+- **LOG_FILE**: The log file where all actions are recorded.
+- **PASSWORD_FILE**: The file where generated passwords are stored securely.
 
 ```sh
 LOG_FILE="/var/log/user_management.log"
 PASSWORD_FILE="/var/secure/user_passwords.txt"
 ```
-### Ensure Secure Directory Exist
+### Ensure Secure Directory Exists
 We use the conditional if statement to ensure that the `var/secure` directory exist.
 
 ```sh
@@ -174,7 +174,7 @@ We can include a completion message for the "LOG_FILE".
 echo "User creation process completed." | tee -a "$LOG_FILE"
 ```
 
-## Example Input file
+## Example Input File
 Create a file named `user_list.txt` with the following content:
 ```
 light; sudo,dev,www-data

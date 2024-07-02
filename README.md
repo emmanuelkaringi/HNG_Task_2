@@ -30,9 +30,9 @@
 
 e.g.
 ```
-light; sudo,dev,www-data
-idimma; sudo
-mayowa; dev,www-data
+flash; sudo,dev,www-data
+thunder; sudo
+thanos; dev,www-data
 ```
 
 ## Script Overview
@@ -177,9 +177,9 @@ echo "User creation process completed." | tee -a "$LOG_FILE"
 ## Example Input File
 Create a file named `user_list.txt` with the following content:
 ```
-light; sudo,dev,www-data
-idimma; sudo
-mayowa; dev,www-data
+flash; sudo,dev,www-data
+thunder; sudo
+thanos; dev,www-data
 ```
 
 ## Usage
